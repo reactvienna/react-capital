@@ -1,19 +1,19 @@
 /**
  * Override the Next.js default document to provide styled-components SSR support
  */
-import Document, { Head, Main, NextScript } from 'next/document'
-import { styleSheet } from 'styled-components'
+import Document, { Head, Main, NextScript } from 'next/document';
+import { styleSheet } from 'styled-components';
 
 export default class CustomDocument extends Document {
-  static async getInitialProps ({ renderPage }) {
-    const page = renderPage()
-    const style = styleSheet.getCSS()
-    return { ...page, style }
+  static async getInitialProps({ renderPage }) {
+    const page = renderPage();
+    const style = styleSheet.getCSS();
+    return { ...page, style };
   }
 
-  render () {
+  render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.style }} />
         </Head>
@@ -22,6 +22,6 @@ export default class CustomDocument extends Document {
           <NextScript />
         </body>
       </html>
-    )
+    );
   }
 }

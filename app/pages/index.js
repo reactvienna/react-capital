@@ -1,5 +1,3 @@
-import Wrapper from '../components/Wrapper'
+import Wrapper from '../components/Wrapper';
 
-export default () => (
-  <Wrapper>Homepage</Wrapper>
-)
+export default () => <Wrapper>Homepage</Wrapper>;
