@@ -7,11 +7,14 @@
     "next": "^2.0.0-beta.24",
     "styled-components": "^2.0.0-1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
   "scripts": {
     "dev": "next app",
     "build": "next build app",
-    "start": "next start app"
+    "start": "next start app",
+    "lint": "standard"
   },
   "keywords": [],
   "author": "ReactCapital  Copyright (C) 2017  Atrium - Verein zur Förderung von SoftwareentwicklerInnen <contact@react.capital> (https://react.capital/)",
