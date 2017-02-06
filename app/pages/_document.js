@@ -15,7 +15,10 @@ export default class CustomDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <style dangerouslySetInnerHTML={{ __html: this.props.style }} />
+          <style
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: this.props.style }}
+          />
         </Head>
         <body>
           <Main />
