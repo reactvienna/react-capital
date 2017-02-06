@@ -9,13 +9,15 @@
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
-    "standard": "^8.6.0"
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0"
   },
   "scripts": {
     "dev": "next app",
     "build": "next build app",
     "start": "next start app",
-    "lint": "standard",
+    "lint": "eslint .",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
