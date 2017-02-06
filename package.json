@@ -1,0 +1,19 @@
+{
+  "name": "react-capital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^2.0.0-beta.24",
+    "styled-components": "^2.0.0-1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next app",
+    "build": "next build app",
+    "start": "next start app"
+  },
+  "keywords": [],
+  "author": "ReactCapital  Copyright (C) 2017  Atrium - Verein zur Förderung von SoftwareentwicklerInnen <contact@react.capital> (https://react.capital/)",
+  "license": "GPL-3.0"
+}
