@@ -8,14 +8,20 @@
     "styled-components": "^2.0.0-1"
   },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "standard": "^8.6.0"
   },
   "scripts": {
     "dev": "next app",
     "build": "next build app",
     "start": "next start app",
-    "lint": "standard"
+    "lint": "standard",
+    "lint-staged": "lint-staged"
   },
+  "lint-staged": {
+    "*.js": "lint -- --fix"
+  },
+  "pre-commit": "lint-staged",
   "keywords": [],
   "author": "ReactCapital  Copyright (C) 2017  Atrium - Verein zur Förderung von SoftwareentwicklerInnen <contact@react.capital> (https://react.capital/)",
   "license": "GPL-3.0"
